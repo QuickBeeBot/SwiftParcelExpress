@@ -111,7 +111,7 @@ const AdminLogin = () => {
                   Email address
                 </Label>
                 <div className="relative mt-1">
-                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-black/40 w-4 h-4" />
+                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40 w-4 h-4" />
                   <Input
                     id="email-address"
                     type="email"
@@ -131,7 +131,7 @@ const AdminLogin = () => {
                   Password
                 </Label>
                 <div className="relative mt-1">
-                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-black/40 w-4 h-4" />
+                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40 w-4 h-4" />
                   <Input
                     id="password"
                     type={showPassword ? 'text' : 'password'}
