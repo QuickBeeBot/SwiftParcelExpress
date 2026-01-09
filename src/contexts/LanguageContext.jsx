@@ -44,6 +44,70 @@ const translations = {
       loggingIn: 'LoggingIn...'
     },
 
+
+  "documents": {
+    "pageTitle": "My Documents",
+    "metaDescription": "Download your invoices, contracts, and shipping documents.",
+    "title": "My Documents",
+    "subtitle": "Access and download all your shipping-related documents in one place.",
+    "download": "Download",
+    "empty": {
+      "title": "No documents yet",
+      "description": "You haven’t generated any invoices or contracts. They’ll appear here once available."
+    },
+    "types": {
+      "invoice": "Shipping invoice",
+      "contract": "Service agreement",
+      "receipt": "Payment receipt",
+      "waybill": "Cargo waybill"
+    },
+    "success": {
+      "downloadedTitle": "Download started",
+      "downloadedDesc": "{{name}} is downloading..."
+    },
+    "errors": {
+      "title": "Documents Error",
+      "fetchFailed": "Failed to load your documents. Please try again later.",
+      "downloadFailed": "Failed to download the document.",
+      "noDownloadUrl": "This document is not available for download."
+    }
+  },
+
+  "billing": {
+    "pageTitle": "Billing & Invoices",
+    "metaDescription": "Manage your SwiftParcel subscription, view invoices, and download receipts.",
+    "title": "Billing & Invoices",
+    "subtitle": "Track your payments, manage your plan, and access all financial documents.",
+    "viewAllDocuments": "View All Documents",
+    "subscription": {
+      "title": "Current Plan",
+      "description": "Your active subscription details",
+      "basicPlan": "Basic Plan",
+      "none": "You don’t have an active subscription."
+    },
+    "status": {
+      "active": "Active",
+      "pastDue": "Past Due",
+      "canceled": "Canceled",
+      "inactive": "Inactive"
+    },
+    "invoices": {
+      "title": "Recent Invoices",
+      "viewAll": "View all",
+      "empty": {
+        "title": "No invoices yet",
+        "description": "Your invoices will appear here once you make a payment."
+      }
+    },
+    "invoice": {
+      "defaultDesc": "Shipping invoice"
+    },
+    "errors": {
+      "title": "Billing Error",
+      "fetchFailed": "Failed to load billing information. Please try again later."
+    }
+  },
+
   "login": {
     "loginTitlePage": "Log In",
     "signupTitlePage": "Sign Up",
