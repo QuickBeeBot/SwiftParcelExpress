@@ -27,6 +27,8 @@ const InvoiceDetails = lazy(() => import('@/pages/InvoiceDetails'));
 const Payment = lazy(() => import('@/pages/Payment'));
 
 // Dashboard
+const Billing = lazy(() => import('@/components/Dashboard/Billing'));
+const Documents = lazy(() => import('@/components/Dashboard/Documents'));
 const DashboardLayout = lazy(() => import('@/components/Dashboard/DashboardLayout'));
 const DashboardOverview = lazy(() => import('@/components/Dashboard/DashboardOverview'));
 const NewShipmentForm = lazy(() => import('@/components/Dashboard/NewShipmentForm'));
@@ -220,6 +222,8 @@ const AppContent = () => {
               element={<DashboardLayoutWrapper />}
             >
               <Route index element={<DashboardOverview />} />
+              <Route path="billing" element={<Billing />} />
+              <Route path="documents" element={<Documents />} />
               <Route path="shipments" element={<ShipmentsPage />} />
               <Route path="new-shipment" element={<NewShipmentForm />} />
               <Route path="tracking" element={<TrackingPage />} />
