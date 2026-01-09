@@ -1,0 +1,190 @@
+/* src/components/Dashboard/RoadTrackerFirebase.css */
+
+/* 🌐 Global reset for map container */
+.road-tracker {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+  height: 600px;
+  background: #0f172a;
+  color: #e2e8f0;
+  overflow: hidden; /* 🔒 Prevents any overflow (critical fix) */
+}
+
+/* 🖥️ Header */
+.road-tracker .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.95);
+  padding: 16px 24px;
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+}
+
+.road-tracker .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.road-tracker .logo-icon {
+  background: #38bdf8;
+  color: #0f172a;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.road-tracker .controls {
+  display: flex;
+  gap: 12px;
+}
+
+.road-tracker .btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #334155;
+  color: white;
+}
+
+.road-tracker .btn:hover {
+  background: #475569;
+  transform: translateY(-1px);
+}
+
+/* 🗺️ Map container — CRITICAL FIX for horizontal overflow */
+.road-tracker .map-containers {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* 🔒 Ensures no scrollbars */
+}
+
+/* 📊 Status panel (bottom-left) */
+.road-tracker .status-panel {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #1e293b;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  max-width: 340px;
+  z-index: 1000;
+  border: 1px solid #334155;
+}
+
+.road-tracker .status-panel h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.road-tracker .status-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.road-tracker .label {
+  color: #94a3b8;
+}
+
+.road-tracker .value {
+  font-weight: 600;
+  color: white;
+}
+
+/* 📈 Progress bar */
+.road-tracker .progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #334155;
+  border-radius: 3px;
+  margin: 6px 0;
+  overflow: hidden;
+}
+
+.road-tracker .progress-fill {
+  height: 100%;
+  background: #38bdf8;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* 🚦 Status indicator (dot) */
+.road-tracker .status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.road-tracker .status-departed { background: #f59e0b; }
+.road-tracker .status-in_transit { background: #38bdf8; }
+.road-tracker .status-arrived { background: #10b981; }
+
+/* 🌐 Connection status (top-right) */
+.road-tracker .connection-status {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  z-index: 1001;
+}
+
+.road-tracker .connected { 
+  background: rgba(16, 185, 129, 0.2); 
+  color: #10b981; 
+}
+.road-tracker .disconnected { 
+  background: rgba(239, 68, 68, 0.2); 
+  color: #ef4444; 
+}
+
+/* 🧭 Leaflet-specific fixes */
+.road-tracker .leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1;
+}
+
+.road-tracker .leaflet-control {
+  z-index: 1002;
+}
+
+/*   Prevent scrollbars globally */
+.road-tracker,
+.road-tracker * {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}

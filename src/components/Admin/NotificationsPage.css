@@ -1,0 +1,84 @@
+/* src/components/Admin/NotificationsPage.css */
+.notifications-page {
+  padding: 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  margin: 0;
+  color: #e2e8f0;
+}
+
+.btn-mark-all {
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notification-item {
+  background: #1e293b;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.notification-item.unread {
+  border-left: 4px solid #38bdf8;
+  background: #1e3a8a;
+}
+
+.notification-item:hover {
+  transform: translateY(-2px);
+}
+
+.notif-icon {
+  width: 40px;
+  height: 40px;
+  background: #334155;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.notif-content h4 {
+  margin: 0 0 4px 0;
+  color: #e2e8f0;
+}
+
+.notif-content p {
+  margin: 0 0 8px 0;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+}
+
+.empty-state i {
+  font-size: 48px;
+  margin-bottom: 16px;
+}

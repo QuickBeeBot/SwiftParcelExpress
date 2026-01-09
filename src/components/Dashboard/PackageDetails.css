@@ -1,0 +1,54 @@
+/* src/components/Dashboard/PackageDetails.css */
+.package-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.package-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 1rem;
+}
+
+.total-items {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 1rem;
+}
+.total-items span {
+  font-size: 0.9rem;
+  color: #a0b3d4;
+  font-weight: 400;
+}
+
+.category-stats {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.category {
+  text-align: center;
+}
+
+.bar {
+  width: 50px;
+  border-radius: 4px 4px 0 0;
+  margin: 0 auto 0.5rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #a0b3d4;
+  margin: 0 0 0.25rem;
+}
+
+.value {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 600;
+}

@@ -1,0 +1,48 @@
+/* src/components/Dashboard/HeaderBar.css */
+.header-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: flex-end;
+}
+
+.search-icon,
+.notification-icon {
+  cursor: pointer;
+  color: #a0b3d4;
+  font-size: 1.1rem;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+.user-profile:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info .name {
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+.user-info .role {
+  font-size: 0.85rem;
+  color: #a0b3d4;
+  margin: 0;
+}

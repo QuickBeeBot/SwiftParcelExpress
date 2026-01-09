@@ -1,0 +1,289 @@
+/* src/components/Dashboard/ActivityPage.css */
+.activity-page {
+  padding: 2rem;
+}
+
+.activity-timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.activity-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 107, 53, 0.3);
+}
+
+.activity-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.activity-icon {
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  background: #FF6B35;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.activity-details {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  border-left: 3px solid #FF6B35;
+}
+
+.activity-details h3 {
+  margin: 0 0 0.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.activity-details p {
+  margin: 0 0 0.5rem;
+  color: #a0b3d4;
+  font-size: 0.95rem;
+}
+.activity-time {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* src/components/Dashboard/ActivityPage.css */
+.activity-page {
+  padding: 2rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.page-header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+}
+.page-header p {
+  font-size: 1rem;
+  color: #a0b3d4;
+  margin: 0.25rem 0 0;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-auto-refresh {
+  padding: 0.6rem 1rem;
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+}
+.btn-auto-refresh.active {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+}
+.btn-auto-refresh:hover {
+  background: rgba(255, 107, 53, 0.2);
+}
+.btn-auto-refresh .spin {
+  animation: spin 1s linear infinite;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.filter-group label {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+.filter-group input,
+.filter-group select {
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.activity-timeline {
+  position: relative;
+  padding-left: 40px;
+}
+.activity-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 107, 53, 0.3);
+}
+
+.activity-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.activity-icon {
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  background: #FF6B35;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.activity-details {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  border-left: 3px solid #FF6B35;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.activity-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+.activity-time {
+  font-size: 0.85rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.activity-details p {
+  margin: 0 0 0.5rem;
+  color: #a0b3d4;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.activity-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.load-more {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-secondary {
+  padding: 0.6rem 1.2rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-secondary:hover {
+  background: rgba(255, 107, 53, 0.2);
+  border-color: #FF6B35;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #a0b3d4;
+}
+.empty-icon {
+  font-size: 9rem;
+  margin-bottom: 1rem;
+  color: #FF6B35;
+}
+.empty-state h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 0 0.75rem;
+}
+.empty-state p {
+  margin: 0 0 1.5rem;
+}
+
+/* Loading & Alerts */
+.loading-state,
+.alert {
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin: 0.75rem 0;
+}
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #FF6B35;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.alert.error {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}

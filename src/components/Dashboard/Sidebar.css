@@ -1,0 +1,73 @@
+/* src/components/Dashboard/Sidebar.css */
+.sidebar {
+  width: 260px;
+  background: rgba(15, 25, 45, 0.65);
+  backdrop-filter: blur(12px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 1rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.logo span {
+  color: #FF6B35;
+}
+
+.menu-section h4 {
+  font-size: 0.85rem;
+  color: #a0b3d4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 1.5rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-section li a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+.menu-section li a:hover,
+.menu-section li a.active {
+  background: rgba(255, 107, 53, 0.2);
+  color: #FF6B35;
+}
+.menu-section li a i {
+  font-size: 1.1rem;
+  width: 24px;
+  text-align: center;
+}
+
+.badge {
+  background: #dc2626;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  margin-left: 0.5rem;
+}

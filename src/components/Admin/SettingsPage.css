@@ -1,0 +1,346 @@
+/* SettingsPage.css */
+.settings-page {
+  padding: 0 1rem;
+}
+
+.page-header {
+  margin-bottom: 1.5rem;
+}
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+}
+.page-header p {
+  font-size: 1.1rem;
+  color: #a0b3d4;
+  margin: 0.5rem 0 0;
+}
+
+/* Alerts */
+.alert {
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin: 0.75rem 0;
+  font-weight: 600;
+}
+.alert.error {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+.alert.success {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Layout */
+.settings-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+.settings-sidebar {
+  width: 240px;
+  flex-shrink: 0;
+}
+.settings-sidebar nav {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1rem;
+}
+.settings-sidebar a {
+  display: block;
+  padding: 0.75rem;
+  color: #cbd5e1;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.settings-sidebar a:hover,
+.settings-sidebar a.active {
+  background: rgba(255, 107, 53, 0.2);
+  color: #FF6B35;
+}
+
+.settings-content {
+  flex: 1;
+}
+
+/* Sections */
+.settings-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.settings-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.settings-section h2 i {
+  margin-right: 0.5rem;
+  color: #FF6B35;
+}
+
+.section-headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.section-headers h2 {
+  margin: 0;
+}
+
+/* Forms */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.form-groupses {
+  margin-bottom: 1rem;
+}
+.form-groupses label {
+  display: block;
+  color: white;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.form-groupses input,
+.form-groupses select,
+.form-groupses textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+}
+.form-groupses input:focus,
+.form-groupses select:focus,
+.form-groupses textarea:focus {
+  outline: none;
+  border-color: #FF6B35;
+  background-color: #201b3d8b;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.3);
+}
+
+.password-field {
+  position: relative;
+}
+.password-field .btn-show {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #94a3b8;
+  padding: 0;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #FF6B35;
+}
+
+/* API Keys */
+.api-create {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.form-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.form-row input,
+.form-row select {
+  flex: 1;
+  min-width: 150px;
+}
+.form-row button {
+  padding: 0.6rem 1rem;
+}
+
+.api-keys table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #f0f4fc;
+}
+.api-keys th,
+.api-keys td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.api-keys th {
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.95rem;
+}
+.api-keys code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+.btn-revoke {
+  padding: 0.35rem 0.75rem;
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.btn-revoke:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
+/* Templates */
+.template-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.template-item {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+}
+.template-item h3 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0 0 1rem;
+}
+.template-item textarea {
+  font-family: monospace;
+}
+
+/* Audit Logs */
+.audit-logs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(30, 41, 59, 0.3);
+  border-radius: 12px;
+  border-left: 4px solid #FF6B35;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  padding: 0.6rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-primary {
+  background: #FF6B35;
+  color: white;
+  border: none;
+}
+.btn-primary:hover:not(:disabled) {
+  background: #e55a2b;
+  transform: translateY(-2px);
+}
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.btn-secondary:hover {
+  background: rgba(255, 107, 53, 0.2);
+  border-color: #FF6B35;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.status-badge.success { background: rgba(16, 185, 129, 0.2); color: #059669; }
+.status-badge.danger { background: rgba(239, 68, 68, 0.2); color: #dc2626; }
+
+.no-data {
+  text-align: center;
+  color: #64748b;
+  font-style: italic;
+  padding: 2rem;
+}
+
+/* Loading */
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  color: #a0b3d4;
+}
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #FF6B35;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .settings-layout {
+    flex-direction: column;
+  }
+  .settings-sidebar {
+    width: 100%;
+  }
+  .template-grid {
+    grid-template-columns: 1fr;
+  }
+}
