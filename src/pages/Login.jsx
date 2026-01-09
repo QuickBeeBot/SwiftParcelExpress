@@ -235,7 +235,7 @@ const Login = () => {
                     {t('login.emailLabel')}
                   </Label>
                   <div className="relative mt-1">
-                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-black/40 w-4 h-4" />
+                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40 w-4 h-4" />
                     <Input
                       id="email-address"
                       type="email"
@@ -264,7 +264,7 @@ const Login = () => {
                     </button>
                   </div>
                   <div className="relative mt-1">
-                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-black/40 w-4 h-4" />
+                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40 w-4 h-4" />
                     <Input
                       id="password"
                       type={showPassword ? 'text' : 'password'}
@@ -279,7 +279,7 @@ const Login = () => {
                     <button
                       type="button"
                       onClick={() => setShowPassword(!showPassword)}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 text-black/40 hover:text-white"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white"
                     >
                       {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                     </button>
