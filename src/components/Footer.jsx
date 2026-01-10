@@ -89,7 +89,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-[#36FFDB] mt-0.5" />
-                <span className="text-white/70">+1 (555) 123-4567</span>
+                <span className="text-white/70">+44 118 315 0778</span>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-[#36FFDB] mt-0.5" />
@@ -130,74 +130,3 @@ const Footer = () => {
 export default Footer;
 
 
-
-
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { Package, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-// import { useLanguage } from '@/contexts/LanguageContext';
-
-// const Footer = () => {
-//   const { t } = useLanguage();
-
-//   return (
-//     <footer className="bg-[#1F1F1F] border-t border-white/10 text-white py-12">
-//       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-//         <div className="space-y-4">
-//           <Link to="/" className="flex items-center group">
-//             <img 
-//               src="https://horizons-cdn.hostinger.com/026546b3-3a97-44bc-b1b6-02c6690099a6/edf1c70f55630599a96794cb64678dc9.png" 
-//               alt="Parcel logo" 
-//               className="h-40 w-auto transition-transform group-hover:scale-105" 
-//             />
-//           </Link>
-//           <p className="text-sm text-white/70">
-//             {t('footer.tagline')}
-//           </p>
-//           <div className="flex space-x-4">
-//             <a href="#" className="text-white/60 hover:text-[#36FFDB] transition-colors"><Facebook className="h-5 w-5" /></a>
-//             <a href="#" className="text-white/60 hover:text-[#36FFDB] transition-colors"><Twitter className="h-5 w-5" /></a>
-//             <a href="#" className="text-white/60 hover:text-[#36FFDB] transition-colors"><Instagram className="h-5 w-5" /></a>
-//             <a href="#" className="text-white/60 hover:text-[#36FFDB] transition-colors"><Linkedin className="h-5 w-5" /></a>
-//           </div>
-//         </div>
-
-//         <div>
-//           <h3 className="font-bold text-lg mb-4">{t('footer.services')}</h3>
-//           <ul className="space-y-2">
-//             <li><Link to="/services" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.airFreight')}</Link></li>
-//             <li><Link to="/services" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.seaFreight')}</Link></li>
-//             <li><Link to="/services" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.roadFreight')}</Link></li>
-//             <li><Link to="/services" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.warehousing')}</Link></li>
-//           </ul>
-//         </div>
-
-//         <div>
-//           <h3 className="font-bold text-lg mb-4">{t('footer.company')}</h3>
-//           <ul className="space-y-2">
-//             <li><Link to="/about" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.aboutUs')}</Link></li>
-//             <li><Link to="/contact" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.contact')}</Link></li>
-//             <li><Link to="/track" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.trackShipment')}</Link></li>
-//             <li><Link to="/quote" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.getQuote')}</Link></li>
-//           </ul>
-//         </div>
-
-//         <div>
-//           <h3 className="font-bold text-lg mb-4">{t('footer.legal')}</h3>
-//           <ul className="space-y-2">
-//             <li><Link to="/privacy" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.privacyPolicy')}</Link></li>
-//             <li><Link to="/terms" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.termsOfService')}</Link></li>
-//             <li><Link to="/cookies" className="text-white/70 hover:text-[#36FFDB] transition-colors">{t('footer.cookiePolicy')}</Link></li>
-//           </ul>
-//         </div>
-//       </div>
-
-//       <div className="mt-12 text-center text-sm text-white/50 border-t border-white/5 pt-8">
-//         &copy; {new Date().getFullYear()} Parcel. All rights reserved.
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
