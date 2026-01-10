@@ -211,19 +211,22 @@ const DashboardLayout = () => {
                   <Link to="/dashboard/settings" className="dropdown-item">
                     <i className="fas fa-cog mr-2"></i> Settings
                   </Link>
-                  <Link to="/dashboard/billing" className="dropdown-item">
+                  <Link to="/" className="dropdown-item">
+                    <i className="fas fa-home mr-2"></i> Home Page
+                  </Link>
+                  {/* <Link to="/dashboard/billing" className="dropdown-item">
                     <i className="fas fa-credit-card mr-2"></i> Billing
                   </Link>
                   <Link to="/dashboard/documents" className="dropdown-item">
                     <i className="fas fa-file-invoice mr-2"></i> Documents
-                  </Link>
-                  <div className="dropdown-divider"></div>
+                  </Link> */}
+                  {/* <div className="dropdown-divider"></div>
                   <button
                     onClick={handleSignOut}
                     className="dropdown-item text-red-400 hover:text-red-300"
                   >
                     <i className="fas fa-sign-out-alt mr-2"></i> Sign Out
-                  </button>
+                  </button> */}
                 </div>
               )}
             </div>
