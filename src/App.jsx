@@ -33,6 +33,7 @@ const DashboardLayout = lazy(() => import('@/components/Dashboard/DashboardLayou
 const DashboardOverview = lazy(() => import('@/components/Dashboard/DashboardOverview'));
 const NewShipmentForm = lazy(() => import('@/components/Dashboard/NewShipmentForm'));
 const TrackingPage = lazy(() => import('@/components/Dashboard/TrackingPage'));
+const PublicTrackingPage = lazy(() => import('@/components/PublicTrackingPage'));
 const ShipmentsPage = lazy(() => import('@/components/Dashboard/ShipmentsPage'));
 const OrdersPage = lazy(() => import('@/components/Dashboard/OrdersPage'));
 const MessagesPage = lazy(() => import('@/components/Dashboard/MessagesPage'));
@@ -203,6 +204,7 @@ const AppContent = () => {
           <Routes>
             {/* ✅ Public Routes — with Navigation + Footer */}
             <Route path="/" element={<PublicLayout><Home /></PublicLayout>} />
+            <Route path="tracking" element={<PublicTrackingPage />} />
             <Route path="/services" element={<PublicLayout><Services /></PublicLayout>} />
             <Route path="/quote" element={<PublicLayout><GetQuote /></PublicLayout>} />
             <Route path="/track" element={<PublicLayout><TrackShipment /></PublicLayout>} />
@@ -238,21 +240,6 @@ const AppContent = () => {
             </Route>
 
             {/* ✅ Admin — No layout */}
-            {/* <Route
-              path="/admin"
-              element={<AdminLayoutWrapper />}
-            >
-              <Route index element={<AdminDashboard />} />
-              <Route path="shipments" element={<AdminShipmentsPage />} />
-              <Route path="pending-shipments" element={<PendingAdminShipmentsPage />} />
-              <Route path="completed-shipments" element={<AdminCompletedShipmentsPage />} />
-              <Route path="tickets" element={<AdminTicketsPage />} />
-              <Route path="users" element={<AdminUsersPage />} />
-              <Route path="reports" element={<AdminReportsPage />} />
-              <Route path="settings" element={<AdminSettingsPage />} />
-              <Route path="newshipment" element={<AdminCreateDeliveryPage />} />
-              <Route path="notifications" element={<NotificationsPage />} />
-            </Route> */}
             <Route path="/admin/*" element={<AdminLayoutWrapper />}>
               <Route index element={<AdminDashboard />} />
               <Route path="dashboard" element={<AdminDashboard />} />

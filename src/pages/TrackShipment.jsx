@@ -34,7 +34,7 @@ const TrackShipment = () => {
     setLoading(true);
     try {
       // Redirect to your existing tracking page with query param
-      navigate(`/dashboard/tracking?tracking=${encodeURIComponent(id)}`);
+      navigate(`/tracking?tracking=${encodeURIComponent(id)}`);
     } catch (error) {
       console.error('Navigation error:', error);
       toast({
