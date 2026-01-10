@@ -522,3 +522,53 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Edit Form Styles */
+.edit-form .section {
+  margin-bottom: 1.5rem;
+}
+.form-row {
+  margin-bottom: 1rem;
+}
+.form-row label {
+  display: block;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+.form-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+.form-input:focus {
+  outline: none;
+  border-color: #36FFDB;
+}
+.form-input.readonly {
+  background: rgba(0, 0, 0, 0.3);
+  cursor: not-allowed;
+}
+.form-select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+.form-select:focus {
+  outline: none;
+  border-color: #36FFDB;
+}
+
+/* Modal Adjustments */
+.edit-modal .modal-body {
+  max-height: 60vh;
+  overflow-y: auto;
+}
